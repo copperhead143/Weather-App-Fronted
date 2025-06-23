@@ -1,0 +1,35 @@
+export const DEFAULT_LOCATION = { // defaultowa lokalizacja (Wadowice)
+    latitude: 49.5300,
+    longitude: 19.3000
+}
+
+export const WEATHER_CODES = { // przypisanie opisow i ikonek do kodow pogodowych
+    0: { icon: 'sun', description: 'Clear sky' },
+    1: { icon: 'cloud-sun', description: 'Mainly clear' },
+    2: { icon: 'cloud', description: 'Partly cloudy' },
+    3: { icon: 'cloud', description: 'Overcast' },
+    45: { icon: 'smog', description: 'Fog' },
+    48: { icon: 'smog', description: 'Depositing rime fog' },
+    51: { icon: 'cloud-drizzle', description: 'Light drizzle' },
+    53: { icon: 'cloud-drizzle', description: 'Moderate drizzle' },
+    55: { icon: 'cloud-drizzle', description: 'Dense drizzle' },
+    56: { icon: 'snowflake', description: 'Light freezing drizzle' },
+    57: { icon: 'snowflake', description: 'Dense freezing drizzle' },
+    61: { icon: 'cloud-rain', description: 'Slight rain' },
+    63: { icon: 'cloud-rain', description: 'Moderate rain' },
+    65: { icon: 'cloud-rain', description: 'Heavy rain' },
+    66: { icon: 'snowflake', description: 'Light freezing rain' },
+    67: { icon: 'snowflake', description: 'Heavy freezing rain' },
+    71: { icon: 'snowflake', description: 'Slight snow fall' },
+    73: { icon: 'snowflake', description: 'Moderate snow fall' },
+    75: { icon: 'snowflake', description: 'Heavy snow fall' },
+    77: { icon: 'snowflake', description: 'Snow grains' },
+    80: { icon: 'cloud-showers-heavy', description: 'Slight rain showers' },
+    81: { icon: 'cloud-showers-heavy', description: 'Moderate rain showers' },
+    82: { icon: 'cloud-showers-heavy', description: 'Violent rain showers' },
+    85: { icon: 'snowflake', description: 'Slight snow showers' },
+    86: { icon: 'snowflake', description: 'Heavy snow showers' },
+    95: { icon: 'bolt', description: 'Thunderstorm' },
+    96: { icon: 'bolt', description: 'Thunderstorm with light hail' },
+    99: { icon: 'bolt', description: 'Thunderstorm with heavy hail' },
+  } as const
