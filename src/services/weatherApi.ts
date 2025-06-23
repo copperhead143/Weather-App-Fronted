@@ -41,5 +41,6 @@ export class WeatherApiService {
         return this.makeRequest<WeatherSummary>('/summary/', params)
     }
 
-
 }
+
+export const weatherApi = new WeatherApiService()
