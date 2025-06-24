@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
       <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo and Title */}
+
             <div className="flex items-center">
               <FontAwesomeIcon 
                 icon="cloud-sun" 
@@ -28,9 +28,9 @@ export const Header: React.FC = () => {
               </div>
             </div>
   
-            {/* Controls */}
+
             <div className="flex items-center space-x-2">
-              {/* Language Toggle */}
+
               <div className="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
                 <button
                   onClick={() => setLanguage('en')}
@@ -53,8 +53,7 @@ export const Header: React.FC = () => {
                   PL
                 </button>
               </div>
-  
-              {/* Theme Toggle */}
+
               <Button
                 variant="ghost"
                 size="sm"

@@ -53,14 +53,14 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({
   return (
     <Card hover className="h-full">
       <div className="space-y-4">
-        {/* Date */}
+
         <div className="text-center">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
             {formatDate(forecast.date, language)}
           </h3>
         </div>
 
-        {/* Weather Icon and Description */}
+
         <div className="text-center">
           <WeatherIcon 
             weatherCode={forecast.weather_code} 
@@ -69,7 +69,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({
           />
         </div>
 
-        {/* Temperature */}
+
         <div className="text-center space-y-1">
           <div className="flex justify-center items-center space-x-4">
             <div>
@@ -91,7 +91,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({
           </div>
         </div>
 
-        {/* Solar Energy and Sunshine */}
+
         <div className="pt-4 border-t border-gray-100 dark:border-gray-700 space-y-3">
           <div className="flex justify-between items-center">
             <span className="text-sm text-gray-600 dark:text-gray-400">

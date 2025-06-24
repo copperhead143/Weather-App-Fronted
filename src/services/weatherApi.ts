@@ -1,25 +1,24 @@
 import type { WeatherForecastResponse, WeatherSummary, ApiError, Coordinates } from "./types";
-
-const API_URL = 'http://localhost:8000/api'
+import { env } from "../utils/env";
 
 export class WeatherApiService {
     
     private async makeRequest<T>(endpoint: string, params: URLSearchParams): Promise<T> {
-        const url = `${API_URL}${endpoint}?${params.toString()}`;
+        const url = `${env.API_URL}${endpoint}?${params.toString()}`;
 
         try{
             const response = await fetch(url)
             const data = await response.json();
 
             if(!response.ok) {
-                throw new Error((data as ApiError).error || 'API requst fail');
+                throw new Error((data as ApiError).error || 'API request fail');
             }
             return data as T;
         }catch (error){
             if (error instanceof Error) {
                 throw new Error(error.message)
             }
-            throw new Error('Unknown error, stary praying')
+            throw new Error('Unknown error, start praying')
         }
     }
 
@@ -40,7 +39,6 @@ export class WeatherApiService {
 
         return this.makeRequest<WeatherSummary>('/summary/', params)
     }
-
 }
 
 export const weatherApi = new WeatherApiService()
