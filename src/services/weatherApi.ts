@@ -1,6 +1,6 @@
 import type { WeatherForecastResponse, WeatherSummary, ApiError, Coordinates } from "./types";
 
-const API_URL = 'https://localhost:8000/api'
+const API_URL = 'http://localhost:8000/api'
 
 export class WeatherApiService {
     

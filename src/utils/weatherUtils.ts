@@ -13,7 +13,7 @@ export const formatTemperature = (temp: number): string => {
 }
 
 export const formatEnergy = (energy: number): string => {
-    return `${energy.toFixed(2)} kWh`
+    return `${(energy).toFixed(2)} kWh`
 }
 
 export const formatHours = (hours: number): string => {

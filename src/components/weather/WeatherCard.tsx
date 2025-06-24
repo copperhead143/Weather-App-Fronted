@@ -39,7 +39,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({
           </div>
           <div className="pt-2 border-t border-gray-100 dark:border-gray-700">
             <div className="text-xs text-green-600 dark:text-green-400 font-medium">
-              {formatEnergy(forecast.gen_energry_kWh)}
+              {formatEnergy(forecast.generated_energy_kWh)}
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-400">
               {formatHours(forecast.sunshine_time_hours)}
@@ -98,7 +98,7 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({
               {t.weather.energy}:
             </span>
             <span className="text-sm font-semibold text-green-600 dark:text-green-400">
-              {formatEnergy(forecast.gen_energry_kWh)}
+              {formatEnergy(forecast.generated_energy_kWh)}
             </span>
           </div>
           <div className="flex justify-between items-center">
