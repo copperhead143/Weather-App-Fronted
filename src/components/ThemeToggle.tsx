@@ -1,5 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTheme } from '../context/ThemeContext'
 import { Button } from '../components/Button'
 
