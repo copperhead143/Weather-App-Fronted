@@ -27,6 +27,37 @@ export const Footer: React.FC = () => {
             </div>
           </div>
         </div>
+        
+        {/* Copyright signature with logo */}
+        <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700 text-center">
+          <div className="flex flex-col items-center">
+            <div className="flex items-center mb-2">
+              <img 
+                src="/logo2.png" 
+                alt="Logo" 
+                className="h-10 mr-2" 
+              />
+              <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                Solar Power Weather Forecast App
+              </span>
+            </div>
+            
+            <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+              <FontAwesomeIcon icon="copyright" className="mr-1" />
+              <span>{new Date().getFullYear()} </span>
+              <span className="mx-1">|</span>
+              <span className="font-semibold text-primary-600 dark:text-primary-400 mx-1">Szymon Sikora</span>
+              <span className="mx-1">|</span>
+              <span>All rights reserved</span>
+            </div>
+            
+            <div className="mt-1 text-xs text-gray-400 dark:text-gray-500">
+              <span>Designed and developed with </span>
+              <FontAwesomeIcon icon="heart" className="text-red-500 mx-1" />
+              <span> in Poland</span>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   )

@@ -122,7 +122,7 @@ export interface Translation {
         maxTemp: 'Maks',
         minTemp: 'Min',
         energy: 'Energia Słoneczna',
-        sunshineHours: 'Godziny Słońca',
+        sunshineHours: 'Godziny Nasłonecznienia',
         pressure: 'Ciśnienie',
         avgPressure: 'Średnie Ciśnienie',
         avgSunshine: 'Średnie Nasłonecznienie',
@@ -143,7 +143,7 @@ export interface Translation {
         longitude: 'Długość geograficzna',
         applyCoordinates: 'Zastosuj współrzędne',
         map: 'Mapa',
-        manual: 'Ręcznie',
+        manual: 'Wpisz koordynaty',
         changeLocation: 'Zmień lokalizację',
         hideMap: 'Ukryj mapę'
       },
