@@ -24,6 +24,16 @@ export interface Translation {
       retry: string
       getLocation: string
       locationError: string
+      selectLocation: string
+      useThisLocation: string
+      clickMapToSelect: string
+      latitude: string
+      longitude: string
+      applyCoordinates: string
+      map: string
+      manual: string
+      changeLocation: string
+      hideMap: string
     }
     days: {
       monday: string
@@ -70,7 +80,17 @@ export interface Translation {
         error: 'Failed to load weather data',
         retry: 'Retry',
         getLocation: 'Get Current Location',
-        locationError: 'Failed to get location'
+        locationError: 'Failed to get location',
+        selectLocation: 'Select Location',
+        useThisLocation: 'Use This Location',
+        clickMapToSelect: 'Click on the map to select a location',
+        latitude: 'Latitude',
+        longitude: 'Longitude',
+        applyCoordinates: 'Apply Coordinates',
+        map: 'Map',
+        manual: 'Manual',
+        changeLocation: 'Change Location',
+        hideMap: 'Hide Map',
       },
       days: {
         monday: 'Monday',
@@ -114,8 +134,18 @@ export interface Translation {
         loading: 'Ładowanie danych pogodowych...',
         error: 'Nie udało się załadować danych pogodowych',
         retry: 'Spróbuj ponownie',
-        getLocation: 'Pobierz Aktualną Lokalizację',
-        locationError: 'Nie udało się pobrać lokalizacji'
+        getLocation: 'Pobierz aktualną lokalizację',
+        locationError: 'Nie udało się pobrać lokalizacji',
+        selectLocation: 'Wybierz lokalizację',
+        useThisLocation: 'Użyj tej lokalizacji',
+        clickMapToSelect: 'Kliknij na mapie, aby wybrać lokalizację',
+        latitude: 'Szerokość geograficzna',
+        longitude: 'Długość geograficzna',
+        applyCoordinates: 'Zastosuj współrzędne',
+        map: 'Mapa',
+        manual: 'Ręcznie',
+        changeLocation: 'Zmień lokalizację',
+        hideMap: 'Ukryj mapę'
       },
       days: {
         monday: 'Poniedziałek',

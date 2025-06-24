@@ -1,12 +1,18 @@
-
-
+import React from 'react'
+import { ThemeProvider } from './context/ThemeContext'
+import { LanguageProvider } from './context/LanguageContext'
+import Layout from './components/Layout'
+import WeatherDashboard from './components/weather/WeatherDashboard'
 
 function App() {
-
   return (
-    <div>
-      <h1>guwno</h1>
-    </div>
+    <ThemeProvider>
+      <LanguageProvider>
+        <Layout>
+          <WeatherDashboard />
+        </Layout>
+      </LanguageProvider>
+    </ThemeProvider>
   )
 }
 

@@ -3,7 +3,7 @@ export interface WeatherForecast { //pogoda na jeden dzień
     weather_code: number
     temperature_max: number
     temperature_min: number
-    gen_energry_kWh: number
+    generated_energy_kWh: number
     sunshine_time_hours: number
   }
   
